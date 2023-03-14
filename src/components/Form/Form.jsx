@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import { StyledForm, StyledInput, StyledInputTitle, StyledLabel } from "./Form.styled";
 import { StyledAddBtn } from "../ContactItem/ContactItem.styled";
 
-import {useDispatch} from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { addNewContact } from "redux/actions";
 
 
-const ContactForm = ({ }) => {
+const ContactForm = () => {
   const [name, setName] = useState('')
   const [number, setNumber] = useState('')
   const dispatch = useDispatch()
